@@ -1,13 +1,11 @@
 import React from "react";
 import classes from "./Post.module.css";
 
-const names = ["Sandri", "Kjara"];
-
-function Post({ author, text }) {
+function Post({ author, body }) {
   return (
     <li className={classes.post}>
       <p className={classes.author}>{author}</p>
-      <p className={classes.text}>{text}</p>
+      <p className={classes.text}>{body}</p>
     </li>
   );
 }
